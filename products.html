@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Coffee Café - Products</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Ensure all product cards are equal height */
+        .product-card-container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .product-img {
+            height: 250px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .card-body {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-price {
+            font-weight: bold;
+            color: var(--accent-color, #b87333);
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <div class="coffee-logo">
+                <i class="fas fa-coffee"></i>
+            </div>
+            Organic Coffee Café
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="products" class="py-5 mt-5" style="background: linear-gradient(135deg, rgba(245,242,232,0.3), rgba(245,242,232,0.8));">
+    <div class="container">
+        <h2 class="section-title text-center mb-3">
+            <i class="fas fa-coffee coffee-cup-icon"></i> Our Premium Coffee Selection
+        </h2>
+        <p class="text-center lead mb-5" style="color: var(--warm-brown);">Hand-picked, expertly roasted, and delivered fresh to your doorstep</p>
+
+        <div class="row g-4">
+            <!-- Ethiopian Single Origin -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 product-card-container">
+                    <img src="Assets/Ethiopian Single Origin.jpg" class="product-img" alt="Ethiopian Single Origin">
+                    <div class="card-body">
+                        <h5 class="card-title">Ethiopian Single Origin</h5>
+                        <p class="card-text">Rich, fruity notes with a wine-like acidity. Grown in the highlands of Ethiopia with traditional methods passed down through generations.</p>
+                        <div class="mt-auto">
+                            <p class="product-price mb-2">$24.99/lb</p>
+                            <button class="btn btn-primary w-100"><i class="fas fa-cart-plus me-2"></i>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colombian Supremo -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 product-card-container">
+                    <img src="Assets/Colombian-Supremo-Coffee.jpg" class="product-img" alt="Colombian Supremo">
+                    <div class="card-body">
+                        <h5 class="card-title">Colombian Supremo</h5>
+                        <p class="card-text">Well-balanced with chocolate undertones and a smooth finish. Premium grade beans.</p>
+                        <div class="mt-auto">
+                            <p class="product-price mb-2">$22.99/lb</p>
+                            <button class="btn btn-primary w-100"><i class="fas fa-cart-plus me-2"></i>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guatemala Antigua -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 product-card-container">
+                    <img src="Assets/Guatemala Antigua.webp" class="product-img" alt="Guatemala Antigua">
+                    <div class="card-body">
+                        <h5 class="card-title">Guatemala Antigua</h5>
+                        <p class="card-text">Full-bodied with spicy and smoky flavors. Grown in volcanic soil at high altitude.</p>
+                        <div class="mt-auto">
+                            <p class="product-price mb-2">$26.99/lb</p>
+                            <button class="btn btn-primary w-100"><i class="fas fa-cart-plus me-2"></i>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brazilian Santos -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 product-card-container">
+                    <img src="Assets/Brazilian Santos.jpg" class="product-img" alt="Brazilian Santos">
+                    <div class="card-body">
+                        <h5 class="card-title">Brazilian Santos</h5>
+                        <p class="card-text">Low acidity with nutty flavors and a creamy body. Perfect for espresso blends.</p>
+                        <div class="mt-auto">
+                            <p class="product-price mb-2">$21.99/lb</p>
+                            <button class="btn btn-primary w-100"><i class="fas fa-cart-plus me-2"></i>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Costa Rica Tarrazú -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 product-card-container">
+                    <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=400&q=80" class="product-img" alt="Costa Rica Tarrazú">
+                    <div class="card-body">
+                        <h5 class="card-title">Costa Rica Tarrazú</h5>
+                        <p class="card-text">Bright acidity with citrus notes and a clean, crisp finish. Shade-grown beans.</p>
+                        <div class="mt-auto">
+                            <p class="product-price mb-2">$25.99/lb</p>
+                            <button class="btn btn-primary w-100"><i class="fas fa-cart-plus me-2"></i>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Signature House Blend -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 product-card-container">
+                    <img src="Assets/Signature House Blend.jpg" class="product-img" alt="Signature House Blend">
+                    <div class="card-body">
+                        <h5 class="card-title">Signature House Blend</h5>
+                        <p class="card-text">Our carefully crafted blend combining the best of three origins for perfect balance.</p>
+                        <div class="mt-auto">
+                            <p class="product-price mb-2">$23.99/lb</p>
+                            <button class="btn btn-primary w-100"><i class="fas fa-cart-plus me-2"></i>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer py-5 bg-dark text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <h5 class="mb-3">Organic Coffee Café</h5>
+                <p>Premium organic coffee, sustainably sourced and expertly roasted for the perfect cup every time.</p>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-white"><i class="fab fa-facebook-f fs-5"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram fs-5"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-twitter fs-5"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-youtube fs-5"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h6>Quick Links</h6>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                    <li><a href="products.html" class="text-white-50 text-decoration-none">Products</a></li>
+                    <li><a href="blog.html" class="text-white-50 text-decoration-none">Blog</a></li>
+                    <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h6>Coffee Info</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white-50 text-decoration-none">Brewing Guides</a></li>
+                    <li><a href="#" class="text-white-50 text-decoration-none">Storage Tips</a></li>
+                    <li><a href="#" class="text-white-50 text-decoration-none">Sustainability</a></li>
+                    <li><a href="#" class="text-white-50 text-decoration-none">Fair Trade</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 mb-4">
+                <h6>Newsletter</h6>
+                <p class="small">Subscribe to get updates on new products and coffee tips.</p>
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Your email">
+                    <button class="btn btn-secondary" type="button">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4 text-white-50">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="mb-0">&copy; 2024 Organic Coffee Café. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#" class="text-white-50 text-decoration-none me-3">Privacy Policy</a>
+                <a href="#" class="text-white-50 text-decoration-none">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

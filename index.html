@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Organic Coffee Café – Sustainably sourced, expertly roasted, and full of rich flavors. Discover our story, shop products, and learn more about coffee.">
+
+    <!-- Title -->
+    <title>Organic Coffee Café | Premium Organic Coffee</title>
+
+    <!-- Preload Video for Faster Display -->
+    <link rel="preload" as="video" href="Assets/Hero.mp4" type="video/mp4">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* Minimal video background styling */
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            color: #fff;
+        }
+        .hero-video {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.4);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+            <i class="fas fa-coffee text-brown me-2"></i> Organic Coffee Café
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section with Video -->
+<section id="home" class="hero-section">
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="Assets/Hero.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay"></div>
+    
+    <div class="container d-flex flex-column justify-content-center align-items-start h-100">
+        <h1 class="display-4 fw-bold">
+            <i class="fas fa-coffee me-2"></i> Premium Organic Coffee
+        </h1>
+        <p class="lead mb-4">Sustainably sourced, carefully roasted beans from around the world – for the perfect cup every time.</p>
+        <div class="d-flex gap-3 flex-wrap">
+            <a href="products.html" class="btn btn-primary btn-lg px-4">
+                <i class="fas fa-shopping-cart me-2"></i> Shop Now
+            </a>
+            <a href="#about" class="btn btn-outline-light btn-lg px-4">
+                <i class="fas fa-leaf me-2"></i> Learn More
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4">
+                <h2 class="fw-bold mb-3"><i class="fas fa-leaf me-2"></i> Our Story</h2>
+                <p class="lead">Founded in 2015, Organic Coffee Café is committed to bringing you the finest organic coffee while supporting sustainable farming practices worldwide.</p>
+                <p>We work directly with farmers to ensure fair trade practices and the highest quality beans that respect both the environment and the communities that grow them.</p>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="p-3 rounded bg-white shadow-sm d-flex align-items-center">
+                            <i class="fas fa-leaf text-success fs-3 me-3"></i>
+                            <div>
+                                <h5 class="mb-1">100% Organic</h5>
+                                <p class="mb-0 small">Certified organic beans</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 rounded bg-white shadow-sm d-flex align-items-center">
+                            <i class="fas fa-handshake fs-3 text-warning me-3"></i>
+                            <div>
+                                <h5 class="mb-1">Fair Trade</h5>
+                                <p class="mb-0 small">Supporting local farmers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=800&q=80" 
+                     alt="Organic coffee farm" 
+                     class="img-fluid rounded shadow-sm" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer py-5 bg-dark text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <h5>Organic Coffee Café</h5>
+                <p>Premium organic coffee, sustainably sourced and expertly roasted for the perfect cup every time.</p>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h6>Quick Links</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#home" class="text-white-50 text-decoration-none">Home</a></li>
+                    <li><a href="#about" class="text-white-50 text-decoration-none">About</a></li>
+                    <li><a href="products.html" class="text-white-50 text-decoration-none">Products</a></li>
+                    <li><a href="blog.html" class="text-white-50 text-decoration-none">Blog</a></li>
+                    <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h6>Coffee Info</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white-50 text-decoration-none">Brewing Guides</a></li>
+                    <li><a href="#" class="text-white-50 text-decoration-none">Storage Tips</a></li>
+                    <li><a href="#" class="text-white-50 text-decoration-none">Sustainability</a></li>
+                    <li><a href="#" class="text-white-50 text-decoration-none">Fair Trade</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 mb-4">
+                <h6>Newsletter</h6>
+                <p class="small">Subscribe for updates on products & coffee tips.</p>
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Your email">
+                    <button class="btn btn-secondary" type="button">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4 border-white-50">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="mb-0">&copy; 2024 Organic Coffee Café. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#" class="text-white-50 me-3">Privacy Policy</a>
+                <a href="#" class="text-white-50">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js" defer></script>
+</body>
+</html>
