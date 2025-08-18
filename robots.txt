@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://organic-coffee-cafe.netlify.app/sitemap.xml
