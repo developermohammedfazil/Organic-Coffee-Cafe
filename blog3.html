@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brewing the Perfect Cup of Organic Coffee | Organic Coffee Café</title>
-  <meta name="description" content="Master the art of brewing organic coffee at home. Learn grind sizes, brewing methods, and tips for the perfect cup.">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brewing the Perfect Cup of Organic Coffee | Organic Coffee Café</title>
+  <meta name="description" content="Master the art of brewing organic coffee at home. Learn grind sizes, brewing methods, and water tips for the perfect cup.">
   <link rel="canonical" href="https://organic-coffee-cafe.netlify.app/blog3.html">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-  <!-- Open Graph -->
+  <!-- OG -->
   <meta property="og:title" content="Brewing the Perfect Cup of Organic Coffee">
   <meta property="og:description" content="Learn expert brewing methods and tips to enjoy the perfect organic coffee.">
   <meta property="og:image" content="https://organic-coffee-cafe.netlify.app/images/og-blog3.jpg">
@@ -15,78 +15,85 @@
   <meta property="og:type" content="article">
   <meta name="twitter:card" content="summary_large_image">
 
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- Speed -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Preload CSS -->
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- Bootstrap & Icons -->
+  <!-- Load CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-
-  <!-- Custom Blog Styles -->
   <link rel="stylesheet" href="css/blog.css">
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMC47WWNWZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-GMC47WWNWZ');
-</script>
+  <!-- Inline critical -->
+  <style>
+    body{margin:0;font-family:system-ui,-apple-system,Poppins,Arial,sans-serif}
+    .navbar{background:#fff;border-bottom:1px solid #eee}
+    .blog-section{padding-top:6rem;padding-bottom:3rem}
+    .blog-image{max-width:100%;height:auto;border-radius:.5rem;box-shadow:0 4px 16px rgba(0,0,0,.08);margin:1rem 0}
+    .footer{background:#222;color:#fff}
+  </style>
 
+  <!-- GA -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GMC47WWNWZ"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-GMC47WWNWZ');</script>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html"><i class="fas fa-coffee me-2"></i> Organic Coffee Café</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-          <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+ <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <div class="coffee-logo"><i class="fas fa-coffee"></i></div>
+      Organic Coffee Café
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <!-- Blog Content -->
-  <section class="blog-section">
-    <div class="container">
-      <h1 class="mb-4">Brewing the Perfect Cup of Organic Coffee</h1>
-      <img src="assets/Brewing Organic Coffee.png" alt="Brewing Organic Coffee" class="blog-image" loading="lazy">
+<section class="blog-section">
+  <div class="container">
+    <h1 class="mb-4">Brewing the Perfect Cup of Organic Coffee</h1>
+    <img src="assets/Brewing Organic Coffee.png" alt="Brewing Organic Coffee" class="blog-image" loading="lazy">
+   <p>Great coffee starts with great beans. Use freshly roasted organic coffee and grind right before brewing to preserve flavor and aroma. <strong>Brewing the Perfect Cup of Organic Coffee</strong> is about combining freshness, precision, and patience.</p>
 
-      <p>Brewing organic coffee is more than just a morning routine — it’s an art form that can transform your coffee experience. By using high-quality organic coffee beans and the right techniques, you can enjoy a flavorful, aromatic, and healthy cup every time.</p>
+<h2>Choose Fresh Organic Beans</h2>
+<p>Look for a recent roast date and brew within two weeks for peak flavor. Choosing organic beans ensures your cup is free from harmful chemicals while supporting sustainable farming practices.</p>
 
-      <h2>Choose Fresh Organic Coffee Beans</h2>
-      <p>Start with freshly roasted organic coffee beans. Look for a roast date on the packaging and aim to brew within two weeks for the best flavor. Organic coffee retains more of its natural oils and aromas because it is grown without synthetic chemicals.</p>
+<h2>Grind Size & Method</h2>
+<p>Coarse for French press, medium for drip, and fine for espresso—each grind size unlocks different notes. Matching the grind to your brewer is one of the most important steps in <em>brewing the perfect cup of organic coffee</em>.</p>
 
-      <h2>Grind Size and Brewing Method</h2>
-      <p>The grind size plays a crucial role in your coffee’s taste. Use a coarse grind for a French press, medium for drip coffee, and fine for espresso. Match your grind size to your brewing method to extract the perfect balance of flavors from your organic coffee.</p>
+<h2>Water Quality & Temperature</h2>
+<p>Filtered water at 90–96°C (195–205°F) gives optimal extraction without bitterness. Using clean, fresh water highlights the natural flavors of organic coffee beans.</p>
 
-      <h2>Water Quality and Temperature</h2>
-      <p>Use filtered water for the cleanest taste. Heat it to about 90–96°C (195–205°F) for optimal extraction. Avoid boiling water, as it can burn the coffee and create bitterness.</p>
+<h2>Experiment</h2>
+<p>Dial in ratios and timings to your taste—every origin and roast sings differently. Experimentation is part of the journey when you are <strong>brewing the perfect cup of organic coffee</strong>.</p>
 
-      <h2>Experiment and Enjoy</h2>
-      <p>Don’t be afraid to experiment with brewing times, ratios, and temperatures until you find your perfect cup. The beauty of brewing organic coffee is that each cup tells a story of quality, care, and sustainability.</p>
+<h2>Extra Tip: Brewing Organic Coffee at Home</h2>
+<p><strong>Brewing the Perfect Cup of Organic Coffee</strong> doesn’t require expensive equipment—just attention to detail. Use a scale to measure beans, avoid overheating water, and try different brewing methods like pour-over, AeroPress, or moka pot. Each method reveals unique layers of flavor while keeping the process sustainable and enjoyable.</p>
 
-      <p>Explore more on our blog: <a href="blog1.html">Health Benefits of Organic Coffee</a> and <a href="blog2.html">How Organic Coffee Supports Farmers</a>.</p>
-    </div>
-  </section>
+<p>Explore more: <a href="blog1.html">Health Benefits of Organic Coffee</a> • <a href="blog2.html">How Organic Coffee Supports Farmers</a></p>
 
-  <!-- Footer -->
-  <footer class="footer py-4 bg-dark text-light">
-    <div class="container text-center">
-      <p>&copy; 2024 Organic Coffee Café. All rights reserved.</p>
-    </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<footer class="footer py-4">
+  <div class="container text-center"><p class="mb-0">&copy; 2024 Organic Coffee Café. All rights reserved.</p></div>
+</footer>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

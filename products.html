@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-     <title>Shop Organic Coffee Beans & Blends | Organic Coffee Café</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Shop Organic Coffee Beans & Blends | Organic Coffee Café</title>
   <meta name="description" content="Browse our selection of premium organic coffee beans, blends, and brews. 100% organic, ethically sourced, and roasted to perfection.">
 
   <link rel="canonical" href="https://organic-coffee-cafe.netlify.app/products.html">
@@ -20,79 +19,85 @@
 
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
+  <!-- Preconnect & DNS Prefetch -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <style>
-        /* Ensure all product cards are equal height */
-        .product-card-container {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
+  <!-- Preload Critical CSS -->
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-        .product-img {
-            height: 250px;
-            object-fit: cover;
-            width: 100%;
-        }
+  <!-- Load Stylesheets (non-blocking) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 
-        .card-body {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
+  <!-- Inline Critical CSS (Navbar + Footer for First Paint) -->
+  <style>
+    body { margin:0; font-family:system-ui, sans-serif; }
+    .navbar { box-shadow:0 2px 4px rgba(0,0,0,0.05); }
+    .navbar-brand { font-weight:600; color:#3e2723 !important; }
+    .coffee-logo i { color:#b87333; }
+    .footer { background:#222; color:#fff; }
+    .footer a { color:#ccc; text-decoration:none; }
+    .footer a:hover { color:#fff; }
+  </style>
 
-        .product-price {
-            font-weight: bold;
-            color: var(--accent-color, #b87333);
-        }
-    </style>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMC47WWNWZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Page Specific CSS -->
+  <style>
+    /* Ensure all product cards are equal height */
+    .product-card-container { display:flex; flex-direction:column; height:100%; }
+    .product-img { height:250px; object-fit:cover; width:100%; }
+    .card-body { flex:1; display:flex; flex-direction:column; }
+    .product-price { font-weight:bold; color:var(--accent-color, #b87333); }
+  </style>
 
-  gtag('config', 'G-GMC47WWNWZ');
-</script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GMC47WWNWZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GMC47WWNWZ');
+  </script>
 </head>
 <body>
 
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <div class="coffee-logo">
-                <i class="fas fa-coffee"></i>
-            </div>
-            Organic Coffee Café
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
-                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <div class="coffee-logo"><i class="fas fa-coffee"></i></div>
+      Organic Coffee Café
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
     </div>
+  </div>
 </nav>
 
+<!-- Products Section -->
 <section id="products" class="py-5 mt-5" style="background: linear-gradient(135deg, rgba(245,242,232,0.3), rgba(245,242,232,0.8));">
-    <div class="container">
-        <h2 class="section-title text-center mb-3">
-            <i class="fas fa-coffee coffee-cup-icon"></i> Our Premium Coffee Selection
-        </h2>
-        <p class="text-center lead mb-5" style="color: var(--warm-brown);">Hand-picked, expertly roasted, and delivered fresh to your doorstep</p>
+  <div class="container">
+    <h2 class="section-title text-center mb-3">
+      <i class="fas fa-coffee coffee-cup-icon"></i> Our Premium Coffee Selection
+    </h2>
+    <p class="text-center lead mb-5" style="color: var(--warm-brown);">
+      Hand-picked, expertly roasted, and delivered fresh to your doorstep
+    </p>
 
-        <div class="row g-4">
-            <!-- Ethiopian Single Origin -->
-            <div class="col-lg-4 col-md-6">
+    <div class="row g-4">
+      <!-- Your existing product cards unchanged -->
+      <!-- Ethiopian Single Origin -->
+        <div class="col-lg-4 col-md-6">
                 <div class="card h-100 border-0 product-card-container">
                     <img src="assets/Ethiopian Single Origin.jpg" class="product-img" alt="Ethiopian Single Origin">
                     <div class="card-body">
@@ -178,66 +183,66 @@
                             <button class="btn btn-primary w-100"><i class="fas fa-cart-plus me-2"></i>Add to Cart</button>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
     </div>
+  </div>
 </section>
 
-<footer class="footer py-5 bg-dark text-white">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 mb-4">
-                <h5 class="mb-3">Organic Coffee Café</h5>
-                <p>Premium organic coffee, sustainably sourced and expertly roasted for the perfect cup every time.</p>
-                <div class="d-flex gap-3">
-                    <a href="#" class="text-white"><i class="fab fa-facebook-f fs-5"></i></a>
-                    <a href="#" class="text-white"><i class="fab fa-instagram fs-5"></i></a>
-                    <a href="#" class="text-white"><i class="fab fa-twitter fs-5"></i></a>
-                    <a href="#" class="text-white"><i class="fab fa-youtube fs-5"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 mb-4">
-                <h6>Quick Links</h6>
-                <ul class="list-unstyled">
-                    <li><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
-                    <li><a href="products.html" class="text-white-50 text-decoration-none">Products</a></li>
-                    <li><a href="blog.html" class="text-white-50 text-decoration-none">Blog</a></li>
-                    <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4">
-                <h6>Coffee Info</h6>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-white-50 text-decoration-none">Brewing Guides</a></li>
-                    <li><a href="#" class="text-white-50 text-decoration-none">Storage Tips</a></li>
-                    <li><a href="#" class="text-white-50 text-decoration-none">Sustainability</a></li>
-                    <li><a href="#" class="text-white-50 text-decoration-none">Fair Trade</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 mb-4">
-                <h6>Newsletter</h6>
-                <p class="small">Subscribe to get updates on new products and coffee tips.</p>
-                <div class="input-group">
-                    <input type="email" class="form-control" placeholder="Your email">
-                    <button class="btn btn-secondary" type="button">Subscribe</button>
-                </div>
-            </div>
+<!-- Footer -->
+<footer class="footer py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <h5 class="mb-3">Organic Coffee Café</h5>
+        <p>Premium organic coffee, sustainably sourced and expertly roasted for the perfect cup every time.</p>
+        <div class="d-flex gap-3">
+          <a href="#"><i class="fab fa-facebook-f fs-5"></i></a>
+          <a href="#"><i class="fab fa-instagram fs-5"></i></a>
+          <a href="#"><i class="fab fa-twitter fs-5"></i></a>
+          <a href="#"><i class="fab fa-youtube fs-5"></i></a>
         </div>
-        <hr class="my-4 text-white-50">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <p class="mb-0">&copy; 2024 Organic Coffee Café. All rights reserved.</p>
-            </div>
-            <div class="col-md-6 text-md-end">
-                <a href="#" class="text-white-50 text-decoration-none me-3">Privacy Policy</a>
-                <a href="#" class="text-white-50 text-decoration-none">Terms of Service</a>
-            </div>
+      </div>
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h6>Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h6>Coffee Info</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Brewing Guides</a></li>
+          <li><a href="#">Storage Tips</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Fair Trade</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 mb-4">
+        <h6>Newsletter</h6>
+        <p class="small">Subscribe to get updates on new products and coffee tips.</p>
+        <div class="input-group">
+          <input type="email" class="form-control" placeholder="Your email">
+          <button class="btn btn-secondary" type="button">Subscribe</button>
         </div>
+      </div>
     </div>
+    <hr class="my-4 text-white-50">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p class="mb-0">&copy; 2024 Organic Coffee Café. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <a href="#" class="text-white-50 me-3">Privacy Policy</a>
+        <a href="#" class="text-white-50">Terms of Service</a>
+      </div>
+    </div>
+  </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-<script src="js/script.js"></script>
+<!-- Defer JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" defer></script>
+<script src="js/script.js" defer></script>
 </body>
 </html>

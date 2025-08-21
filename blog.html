@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- title -->
- <title>Coffee Blog | Brewing, Health Benefits & Farming | Organic Coffee Café</title>
-  <!-- description -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title & Description -->
+  <title>Coffee Blog | Brewing, Health Benefits & Farming | Organic Coffee Café</title>
   <meta name="description" content="Read expert blogs on coffee brewing techniques, health benefits of organic coffee, and how organic farming supports communities.">
 
+  <!-- Canonical -->
   <link rel="canonical" href="https://organic-coffee-cafe.netlify.app/blog.html">
 
   <!-- Open Graph -->
@@ -18,50 +19,78 @@
   <meta property="og:type" content="article">
   <meta name="twitter:card" content="summary_large_image">
 
+  <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-<link rel="stylesheet" href="css/style.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMC47WWNWZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- DNS Prefetch & Preconnect -->
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 
-  gtag('config', 'G-GMC47WWNWZ');
-</script>
+  <!-- Preload CSS -->
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Load CSS Normally -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Inline Critical CSS -->
+  <style>
+    /* Critical: Navbar, Hero Title, Footer */
+    body { font-family: Arial, sans-serif; margin:0; padding:0; }
+    .navbar { box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .navbar-brand { font-weight: bold; color: #6f4e37 !important; }
+    .nav-link { font-weight: 500; }
+    .footer { font-size: 0.9rem; }
+    h1, h5 { font-weight: 600; }
+    .btn-primary { background: #6f4e37; border: none; }
+    .btn-primary:hover { background: #5a3d2e; }
+  </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GMC47WWNWZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GMC47WWNWZ');
+  </script>
 </head>
 <body>
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="index.html"><i class="fas fa-coffee"></i> Organic Coffee Café</a>
+    <a class="navbar-brand" href="index.html">
+      <div class="coffee-logo"><i class="fas fa-coffee"></i></div>
+      Organic Coffee Café
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+        <li class="nav-item"><a  class="nav-link" href="products.html">Products</a></li>
         <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
-
 <!-- Blog Listing -->
 <section class="py-5 mt-5">
   <div class="container">
     <h1 class="mb-4">Our Coffee Blog</h1>
     <div class="row g-4">
+
       <!-- Blog Card 1 -->
       <div class="col-md-4">
         <div class="card shadow-sm">
-          <img src="assets/Health Benefits of Organic Coffee.jpg" class="card-img-top" alt="Health Benefits of Organic Coffee" loading="lazy">
+          <img src="assets/Health Benefits of Organic Coffee.png" class="card-img-top" alt="Health Benefits of Organic Coffee" loading="lazy">
           <div class="card-body">
             <h5 class="card-title">Health Benefits of Organic Coffee</h5>
             <p class="card-text">Organic coffee is more than just a delicious drink — it’s packed with health benefits. Discover why it’s worth choosing organic for your daily brew...</p>
@@ -93,6 +122,7 @@
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -104,6 +134,8 @@
   </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<!-- Defer Bootstrap JS -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
